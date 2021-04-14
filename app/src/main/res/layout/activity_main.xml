@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btniniciarsesion"
+        android:layout_width="309dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="80dp"
+        android:background="#5D5A5B"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="INICIAR SESIÓN"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#8768DA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editpass" />
+
+    <EditText
+        android:id="@+id/editpass"
+        android:layout_width="305dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="44dp"
+        android:autofillHints=""
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="CONTRASEÑA"
+        android:inputType="textPersonName|textPassword"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#8768DA"
+        android:textColorHint="#3362F3"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edituser" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="48dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnenviarsolicitudbanio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edituser"
+        app:layout_constraintVertical_bias="0.477"
+        app:srcCompat="@drawable/password_32" />
+
+    <EditText
+        android:id="@+id/edituser"
+        android:layout_width="304dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="52dp"
+        android:autofillHints=""
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="USUARIO"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#8768DA"
+        android:textColorHint="#3362F3"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="47dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/editnommascotabanio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.542"
+        app:srcCompat="@drawable/user_male_32" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="310dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="44dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logocodeline" />
+</androidx.constraintlayout.widget.ConstraintLayout>

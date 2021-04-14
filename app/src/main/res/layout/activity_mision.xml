@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mision"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".mision">
+
+    <ImageView
+        android:id="@+id/btnmision2"
+        android:layout_width="383dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textusuario2"
+        app:srcCompat="@drawable/mision" />
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="121dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="4dp"
+        android:foreground="@drawable/logocodeline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textusuario2"
+        android:layout_width="187dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:text="USUARIO"
+        android:textAlignment="textStart"
+        android:textColor="#3362F3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/logo2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="331dp"
+        android:layout_height="231dp"
+        android:layout_marginTop="64dp"
+        android:text="Ofrecer servicios de computación avanzados, para todos nuestros potenciales clientes que busquen un servicio de máxima excelencia. Para ello trabajamos en un ambiente de calidad total, donde el servicio ofrecido es un fiel reflejo de nuestra eficacia y eficiencia empresarial que busca satisfacer las necesidades de nuestros clientes al alcance de sus bolsillos. "
+        android:textColor="#8768DA"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnmision2" />
+
+    <Button
+        android:id="@+id/btncontactanos"
+        android:layout_width="141dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:background="#3362F3"
+        android:text="CONTACTANOS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toEndOf="@+id/btnregresar"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnregresar"
+        android:layout_width="141dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:background="#3362F3"
+        android:text="REGRESAR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/btnsalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textusuario2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/exit" />
+</androidx.constraintlayout.widget.ConstraintLayout>
