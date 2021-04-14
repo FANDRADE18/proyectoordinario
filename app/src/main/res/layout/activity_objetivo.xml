@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/objetivo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".objetivo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vision"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".vision">
+
+        <Button
+            android:id="@+id/btncontactanos4"
+            android:layout_width="141dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="4dp"
+            android:background="#3362F3"
+            android:text="CONTACTANOS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.597"
+            app:layout_constraintStart_toEndOf="@+id/btnregresar4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <Button
+            android:id="@+id/btnregresar4"
+            android:layout_width="141dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="48dp"
+            android:background="#3362F3"
+            android:text="REGRESAR"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="340dp"
+            android:layout_height="244dp"
+            android:layout_marginTop="56dp"
+            android:text="Objetivo general: Brindar servicios de computación avanzada a nivel nacional e internacional.  Objetivos específicos: 1.	Conseguir más equipos de cómputo(computadoras, servidores y monitores) en 6 meses. 2.	Incrementar el número de clientes un 10% en 1 año. 3.	Posicionarnos en el mercado yucateco un 3% en 3 años. 4.	Brindar servicios de computación avanzada a nivel nacional e internacional entre 6 años. "
+            android:textColor="#8768DA"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnmision5" />
+
+        <ImageView
+            android:id="@+id/btnmision5"
+            android:layout_width="383dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo6"
+            app:srcCompat="@drawable/objetivos" />
+
+        <ImageView
+            android:id="@+id/logo6"
+            android:layout_width="121dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="4dp"
+            android:foreground="@drawable/logocodeline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/btnsalir2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textusuario4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/exit" />
+
+    <TextView
+        android:id="@+id/textusuario4"
+        android:layout_width="187dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:text="USUARIO"
+        android:textAlignment="textStart"
+        android:textColor="#3362F3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/logo3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo3"
+        android:layout_width="121dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="4dp"
+        android:foreground="@drawable/logocodeline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

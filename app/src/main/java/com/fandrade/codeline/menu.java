@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class menu extends AppCompatActivity {
     TextView usuario;
-    ImageView mision;
+    ImageView mision,vision,objetivo,valores;
     SharedPreferences preferences;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,26 +20,47 @@ public class menu extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         usuario=(TextView)findViewById(R.id.textusuario);
         mision=(ImageView) findViewById(R.id.btnmision);
+        vision=(ImageView) findViewById(R.id.btnvision);
+        objetivo=(ImageView) findViewById(R.id.btnobjetivos);
+        valores=(ImageView) findViewById(R.id.btnvalores);
+
+
         leercredenciales();
 
         mision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i= new Intent(getApplicationContext(),mision.class);
-                GuardarCredenciales(usuario.getText().toString());
+                startActivity(i);
+            }
+        });
+
+        vision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(getApplicationContext(),vision.class);
+                startActivity(i);
+            }
+        });
+        objetivo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(getApplicationContext(),objetivo.class);
+                startActivity(i);
+            }
+        });
+        valores.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(getApplicationContext(),valores.class);
                 startActivity(i);
             }
         });
     }
     private void leercredenciales() {
         preferences=getSharedPreferences("credenciales", Context.MODE_PRIVATE);
-        usuario.setText(preferences.getString("user",""));
+        usuario.setText("USUARIO: "+preferences.getString("user",""));
     }
 
-    private void GuardarCredenciales(String nombre) {
-        preferences=getSharedPreferences("credenciales", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor= preferences.edit();
-        editor.putString("user",nombre);
-        editor.commit();
-    }
+
 }
