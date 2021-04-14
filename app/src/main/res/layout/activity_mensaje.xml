@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mensaje"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".mensaje">
+
+    <Button
+        android:id="@+id/btnregresa"
+        android:layout_width="309dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="20dp"
+        android:background="#5D5A5B"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="REGRESA"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#8768DA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnaceptar" />
+
+    <Button
+        android:id="@+id/btnaceptar"
+        android:layout_width="309dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="36dp"
+        android:background="#5D5A5B"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="ACEPTAR"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#8768DA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textmensaje" />
+
+    <TextView
+        android:id="@+id/textmensaje"
+        android:layout_width="331dp"
+        android:layout_height="296dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape"
+        android:text="mensaje"
+        android:textAlignment="textStart"
+        android:textColor="#8768DA"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo7" />
+
+    <ImageView
+        android:id="@+id/logo7"
+        android:layout_width="253dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="16dp"
+        android:foreground="@drawable/logocodeline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

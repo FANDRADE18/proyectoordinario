@@ -18,11 +18,11 @@
         android:text="CONTACTANOS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.597"
-        app:layout_constraintStart_toEndOf="@+id/btnregresar4"
+        app:layout_constraintStart_toEndOf="@+id/btnregresar5"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/btnregresar4"
+        android:id="@+id/btnregresar5"
         android:layout_width="141dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
